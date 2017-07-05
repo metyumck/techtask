@@ -1,0 +1,143 @@
+// Normalize Styles
+@import (inline) 'node_modules/normalize.css/normalize.css';
+
+// Import Modules
+@import 'node_modules/bootstrap/less/bootstrap';
+
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Styling on warning for users on IE7 or below
+.browsehappy {
+  text-align: center;
+  margin: 0;
+  background: #fff8e2;
+  color: #000;
+  padding: 0.5em 0;
+}
+
+// Site variables
+@dark-grey: #0e1414;
+@text-colour: #f6f6f8;
+@text-colour-weighted: #ffffff;
+@text-colour-highlight: #cf1430;
+@font-family: "HelveticaNeue-Light", Arial, sans-serif;
+
+// Site styles
+body {
+  font-family: @font-family;
+  background-color: @dark-grey;
+  color: @text-colour;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2em;
+  padding-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid @text-colour;
+
+}
+
+h2 {
+  color: @text-colour-highlight;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.7em;
+  color: @text-colour;
+  &.weighted {
+    color: @text-colour-weighted;
+    font-weight: bold;
+  }
+}
+
+.row {
+  padding-top: 40px;
+}
+
+.image-group {
+
+  img {
+    margin-bottom: 12px;
+  }
+
+  @media(min-width: 768px) {
+    margin-left: 8px;
+    display: inline-block;
+    max-width: 48%;
+    .top-image {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.content-group {
+
+  vertical-align: top;
+  padding-left: 7px;
+  padding-right: 7px;
+
+  &.first-item {
+    padding-left: 0px;
+  }
+
+  p {
+    max-width: 325px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+  }
+
+}
+
+.col-md-12 {
+  h1 {
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+}
+
+// Utility
+.small-gutter {
+  margin-left: 0px;
+  margin-right: 0px;
+  > .col-md-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.red {
+  background-color: red;
+  height: 800px;
+}
+
+.green {
+  background-color: green;
+  height: 800px;
+}
+
+.white {
+  background-color: white;
+  height: 800px;
+}

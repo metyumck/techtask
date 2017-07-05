@@ -1,0 +1,12 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "Tech Task",
+      "htmlOption": "jade",
+      "jsPreprocessor": "none",
+      "cssOption": "less",
+      "testFramework": "none"
+    },
+    "version": "1.5.2"
+  }
+}

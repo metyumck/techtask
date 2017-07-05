@@ -1,0 +1,103 @@
+<!DOCTYPE html><!--[if lt IE 9]>
+<html class='lt-ie9 no-js' lang='en'>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Tech Task</title>
+  <meta name="description" content="A new Yeogurt application">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div id="panModal" tabindex="-1" role="dialog" class="modal fade">
+    <div role="document" class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button><img src="images/pan.png" class="img-responsive center-block">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="phoneModal" tabindex="-1" role="dialog" class="modal fade">
+    <div role="document" class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button><img src="images/phone.png" class="img-responsive center-block">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="carrotsModal" tabindex="-1" role="dialog" class="modal fade">
+    <div role="document" class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button><img src="images/carrots.png" class="img-responsive center-block">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="image-group"><a href="#" data-toggle="modal" data-target="#panModal"><img src="images/pan.png" class="img-responsive center-block"></a></div>
+        <div class="image-group"><a href="#" data-toggle="modal" data-target="#phoneModal"><img src="images/phone.png" class="img-responsive top-image center-block"></a><a href="#" data-toggle="modal" data-target="#carrotsModal"><img src="images/carrots.png" class="img-responsive center-block"></a></div>
+      </div>
+      <div class="col-md-4">
+        <h1>Taste: A five-sense experience</h1>
+        <p>
+          Our visual sense provide up to 28% of our taste experience.
+          This is a theory Instagram chef Jacques la Merde takes to
+          the extreme. Serving up exquisite tasting plates - in fact
+          made from gas station ingredients - to her thousands of
+          followers, she demonstrates how visual techniques affect
+          our perception of food.
+        </p>
+        <h2>Food that looks its best</h2>
+        <p class="weighted">
+          Enhance the flavour of your food by using a variety of
+          colours and shapes to entice the eyes
+        </p>
+      </div>
+    </div>
+    <div class="row small-gutter">
+      <div class="col-md-12 text-center">
+        <h1>Taste the colours</h1>
+      </div>
+      <div class="col-md-4 content-group first-item"><a href="red.html" title="Red"><img src="images/red.png" class="img-responsive center-block"></a>
+        <div class="text-center">
+          <h3>Red</h3>
+          <p>
+            Red food reminds us of berries and soft fruits, so we
+            anticipate a sweet taste.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 content-group"><a href="green.html" title="Green"><img src="images/green.png" class="img-responsive center-block"></a>
+        <div class="text-center">
+          <h3>Green</h3>
+          <p>
+            Fresh zingy green colours are reminiscent of unripe
+            fruit, promising sour or acid flavours
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 content-group"><a href="white.html" title="White"><img src="images/white.png" class="img-responsive center-block"></a>
+        <div class="text-center">
+          <h3>White</h3>
+          <p>
+            White foods evoke memories of salt and salty flavours,
+            driving the expectation of a savoury treat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/main.js"></script>
+</body></html>

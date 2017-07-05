@@ -1,0 +1,78 @@
+extends _layouts/base
+
+block content
+  #panModal.modal.fade(tabindex="-1", role="dialog")
+    .modal-dialog(role="document")
+      .modal-content
+        .modal-body
+          button.close(type="button", data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true")
+              | &times;
+          img(src='images/pan.png').img-responsive.center-block
+  #phoneModal.modal.fade(tabindex="-1", role="dialog")
+    .modal-dialog(role="document")
+      .modal-content
+        .modal-body
+          button.close(type="button", data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true")
+              | &times;
+          img(src='images/phone.png').img-responsive.center-block
+  #carrotsModal.modal.fade(tabindex="-1", role="dialog")
+    .modal-dialog(role="document")
+      .modal-content
+        .modal-body
+          button.close(type="button", data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true")
+              | &times;
+          img(src='images/carrots.png').img-responsive.center-block
+  .container
+    .row
+      .col-md-8
+        .image-group
+          a(href="#", data-toggle="modal", data-target="#panModal")
+            img(src='images/pan.png').img-responsive.center-block
+        .image-group
+          a(href="#", data-toggle="modal", data-target="#phoneModal")
+            img(src='images/phone.png').img-responsive.top-image.center-block
+          a(href="#", data-toggle="modal", data-target="#carrotsModal")
+            img(src='images/carrots.png').img-responsive.center-block
+      .col-md-4
+        h1 Taste: A five-sense experience
+        p
+          | Our visual sense provide up to 28% of our taste experience.
+          | This is a theory Instagram chef Jacques la Merde takes to
+          | the extreme. Serving up exquisite tasting plates - in fact
+          | made from gas station ingredients - to her thousands of
+          | followers, she demonstrates how visual techniques affect
+          | our perception of food.
+        h2 Food that looks its best
+        p.weighted
+          | Enhance the flavour of your food by using a variety of
+          | colours and shapes to entice the eyes
+    .row.small-gutter
+      .col-md-12.text-center
+        h1 Taste the colours
+      .col-md-4.content-group.first-item
+        a(href='red.html' title='Red')
+          img(src='images/red.png').img-responsive.center-block
+        .text-center
+          h3 Red
+          p
+            | Red food reminds us of berries and soft fruits, so we
+            | anticipate a sweet taste.
+      .col-md-4.content-group
+        a(href='green.html' title='Green')
+          img(src='images/green.png').img-responsive.center-block
+        .text-center
+          h3 Green
+          p
+            | Fresh zingy green colours are reminiscent of unripe
+            | fruit, promising sour or acid flavours
+      .col-md-4.content-group
+        a(href='white.html' title='White')
+          img(src='images/white.png').img-responsive.center-block
+        .text-center
+          h3 White
+          p
+            | White foods evoke memories of salt and salty flavours,
+            | driving the expectation of a savoury treat.
